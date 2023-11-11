@@ -1,0 +1,39 @@
+{
+  "name": "nothin2watch-backend",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/nothin2watch-backend/src",
+  "targets": {
+    "build": {
+      "executor": "@nx/deno:esbuild",
+      "outputs": ["{workspaceRoot}/dist/apps/nothin2watch-backend"],
+      "options": {
+        "main": "apps/nothin2watch-backend/src/main.ts",
+        "outputFile": "dist/apps/nothin2watch-backend/main.js",
+        "denoConfig": "apps/nothin2watch-backend/deno.json"
+      }
+    },
+    "serve": {
+      "executor": "@nx/deno:run",
+      "options": {
+        "buildTarget": "nothin2watch-backend:build",
+        "watch": true
+      }
+    },
+    "test": {
+      "executor": "@nx/deno:test",
+      "outputs": ["{options.coverageDirectory}"],
+      "options": {
+        "coverageDirectory": "coverage/apps/nothin2watch-backend",
+        "denoConfig": "apps/nothin2watch-backend/deno.json"
+      }
+    },
+    "lint": {
+      "executor": "@nx/deno:lint",
+      "options": {
+        "denoConfig": "apps/nothin2watch-backend/deno.json"
+      }
+    }
+  },
+  "tags": []
+}
