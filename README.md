@@ -15,6 +15,9 @@ To start the development server run `yarn start-server`. Open your browser and n
 `yarn test:unit`
 `yarn test:server:unit`
 
+## Visualize Architecture
+The nx graph command generates a graph of how apps and libraries depend on each other.
+
 ## Generate code
 
 If you happen to use Nx plugins, you can leverage code generators that might come with it.
