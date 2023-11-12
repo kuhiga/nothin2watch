@@ -12,7 +12,8 @@ export default async function Index() {
           <div id="welcome">
             <h1>
               <span> Hello there, </span>
-              Welcome nothin2watch-dashboard 👋
+              Welcome nothin g2watch-dashboard 👋
+
             </h1>
           </div>
 
