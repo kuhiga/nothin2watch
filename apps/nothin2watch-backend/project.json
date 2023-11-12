@@ -19,7 +19,8 @@
       "executor": "@nx/deno:run",
       "options": {
         "buildTarget": "nothin2watch-backend:build",
-        "watch": true
+        "watch": true,
+        "port": 9002
       }
     },
     "test": {
