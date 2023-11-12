@@ -9,7 +9,8 @@
     "test:unit": "nx test nothin2watch-dashboard",
     "storybook:run": "nx storybook nothin2watch-dashboard",
     "start-server": "nx serve nothin2watch-backend",
-    "test:server:unit": "nx test nothin2watch-server"
+    "test:server:unit": "nx test nothin2watch-server",
+    "prettier": "nx format"
   },
   "dependencies": {
     "@nx/next": "17.1.1",

@@ -1,5 +1,10 @@
 {
   "deno.enablePaths": ["apps/nothin2watch-backend"],
   "deno.unstable": true,
-  "deno.importMap": "./import_map.json"
+  "deno.importMap": "./import_map.json",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
